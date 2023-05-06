@@ -1,0 +1,22 @@
+.top{
+    background-color:grey;
+    height:40px;
+    width:100%;
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+h1{
+    color:black;
+    text-align: center;
+    margin:auto;
+}
+
+button{
+    height:500px;
+    width:600px;
+    background-color:yellowgreen;
+    margin-top:150px;
+    margin-left:20px;
+}
