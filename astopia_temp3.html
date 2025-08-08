@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astopia</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url("static/background.JPG");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Layout */
+        .limiter {
+            max-width: 1400px;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styles */
+        .header {
+            width: 100vw;
+            height:8vh;
+            background:#274763b4 /*#2c5475be original*/;
+            display:flex;
+            align-items:center;
+            justify-content: space-between;   
+        }
+        .logo{
+            margin-left:2vh;
+            margin-top:1vh;
+        } 
+        .logo img{
+            width:14.5vh;
+            height:5.5vh;
+        }
+        .nav-links{
+            display:flex;
+            align-items: center;
+        }
+        .head_txt{
+            position:relative;
+            margin-top:1.2vh;
+            margin-right:5vw;
+            color:white;
+            font-size:1.6vh; 
+            text-decoration:none;
+            font-weight:bold;
+            padding-bottom: 5px;
+            overflow: hidden;
+        }
+        .head_txt::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: white;
+            transition: width 0.3s ease-out;
+        }
+        
+        .head_txt:hover::after {
+            width: 100%;
+        }
+        .container{
+            width:100%;
+            height:calc(100vh - 8vh);
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .container h1{
+            margin-left:20vw;
+        }
+        .font1{
+            z-index:999;
+            font-size:14vh;
+            color:white;
+            letter-spacing: 0.1rem;
+        }
+        .content{
+            position:absolute;
+            z-index:500;
+            width:50vh;
+            height:45vh;
+            background:rgb(87, 144, 146);
+            margin-left: calc(20vw - 68vh);
+            margin-top:8vh
+        }
+        .font2{
+            color:transparent;
+            -webkit-text-stroke:0.17rem white;
+            font-size:14vh;
+            letter-spacing: 0.1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="limiter">
+        <header class="header">
+            <a href="/" class="logo" aria-label="home">
+                <img src="static/logo.png" alt="Astopia Logo">
+            </a>
+            <nav class="nav-links">
+                <a href="/" class="head_txt">HOME</a>
+                <a href="/about" class="head_txt">ABOUT US</a>
+                <a href="/policy" class="head_txt">POLICY</a>  
+                <a href="/products" class="head_txt">PRODUCTS</a>
+                <a href="/comments" class="head_txt">COMMENTS</a>
+            </nav>
+        </header>
+        
+        <div class="container">
+            <h1 class="font1">ASTOPIA</h1>
+            <div class="content">
+                <p class="content_txt"></p>
+            </div>
+            <h1 class="font2">ASTOPIA</h1>
+            <h1 class="font2">ASTOPIA</h1>
+        </div>
+    </div>
+</body>
+</html>
