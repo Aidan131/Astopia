@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astopia</title>
     <style>
-        /* Reset and Base Styles */
-        * {
+        *, *::before, *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
         
         body {
@@ -22,15 +24,17 @@
             min-height: 100vh;
             overflow-x: hidden;
         }
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
 
-        /* Layout */
         .limiter {
             max-width: 1400px;
             margin: 0;
             padding: 0;
         }
 
-        /* Header Styles */
         .header {
             width: 100vw;
             height:8vh;
