@@ -106,7 +106,7 @@
                 display: block;
             }*/
             .home .font1, .home .font2{
-                font-size: 9vh;
+                font-size: 8vh;
                 margin-left:50px;
                 line-height:10vh;
                 letter-spacing:normal;
@@ -115,7 +115,7 @@
                 width:20vh;
                 height:29vh;
                 margin-top: 10vh;
-                margin-right: 220px;
+                margin-right: 200px;
             }
             .home .font2{
                 -webkit-text-stroke: 0.2rem white;
@@ -129,3 +129,4 @@
             
 
         }
+
