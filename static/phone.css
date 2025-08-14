@@ -109,6 +109,7 @@
                 font-size: 9vh;
                 margin-left:50px;
                 line-height:10vh;
+                letter-spacing:normal;
             }
             .home .animation_box{
                 width:20vh;
@@ -126,4 +127,5 @@
                 background-color:rgb(34, 77, 105);
             }
             
+
         }
