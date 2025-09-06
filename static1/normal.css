@@ -36,7 +36,6 @@ html,body{
     -ms-overflow-style: none;
     position:absolute;
     font-family:"Pixelify Sans", sans-serif;
-    overflow-x:hidden;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -54,7 +53,7 @@ body::-webkit-scrollbar {
 }*/
 header{
     display:flex;
-    width:100%;
+    width:100vw;
     justify-content: space-between;
     align-items:center;
     min-height:5vh;
@@ -522,7 +521,7 @@ body.light-mode .toggle-button #sun {
 }
 .policy .sub2 .card{
     background-color: #111;
-    min-width: 280px;
+    width: 15vw;
     color:white;
     padding: 40px 20px 10px 20px;
     border-radius: 20px;
@@ -546,7 +545,7 @@ body.light-mode .toggle-button #sun {
     color:white;
 }
 .policy .sub2 .card h1{
-    font-size:3vh;
+    font-size:1.5rem;
     padding-bottom:20px;
     margin-bottom: 20px;
     text-align: center;
@@ -560,7 +559,7 @@ body.light-mode .toggle-button #sun {
     margin-left:20px;
 }
 .policy hr{
-    width:80%;
+    width:80vw;
     background-color: #333;
     border:none;
     height:1px;
@@ -646,4 +645,3 @@ footer .column2 ul li a{
     text-decoration:none;
     color:white
 }
-
