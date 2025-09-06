@@ -36,6 +36,7 @@ html,body{
     -ms-overflow-style: none;
     position:absolute;
     font-family:"Pixelify Sans", sans-serif;
+    overflow-x:hidden;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -645,3 +646,4 @@ footer .column2 ul li a{
     text-decoration:none;
     color:white
 }
+
