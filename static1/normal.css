@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
 :root{
     --bg-primary:#000000;
     --header-scrolled:#474747c2;
@@ -20,7 +22,8 @@
     --bg-primary:#ffffff;
     --header-scrolled:#d3d3d3c2;
     --main-txt-color:#000000;
-    --home-sub1-title1-before: hsl(184, 100%, 14%);
+    --home-sub1-title1-before: #ffffff;
+
 }
 html,body{
     height:100%;
@@ -32,7 +35,7 @@ html,body{
     scrollbar-width: 0;
     -ms-overflow-style: none;
     position:absolute;
-    font-family:"Mozilla Text", sans-serif;
+    font-family:"Pixelify Sans", sans-serif;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -231,9 +234,9 @@ body.light-mode .toggle-button #sun {
     height: 100%;
     width: 100%;
     background: var(--home-sub1-title1-before);
-    transform: perspective(10px) rotateX(10deg) scale(2, 0.4);
+    transform: perspective(15px) rotateX(10deg) scale(1, 0.2);
     filter: blur(1em);
-    opacity: 0.8;
+    opacity: 0.5;
 }
 .home .sub1 .title1:active{
     color: var(--main-txt-color);
@@ -249,6 +252,7 @@ body.light-mode .toggle-button #sun {
 .home .sub1 .title1:hover::before{
     opacity: 1;
 }
+
 .home .sub1 .content1{
     text-shadow: 0px 0px 10px var(--main-txt-color), 0px 0px 0px 15px var(--main-txt-color);
 }
@@ -312,7 +316,7 @@ body.light-mode .toggle-button #sun {
     flex-direction:column;
     align-items: center;
     border-radius: 40px;
-    max-width:1000px;
+    max-width:1200px;
     min-height:100vh;
     flex-shrink: 0;
     height:auto;
@@ -406,8 +410,7 @@ body.light-mode .toggle-button #sun {
 }   
 
 .product .list .item{
-    height:auto;
-    min-width:400px;
+    min-width:calc(calc(84vw - 300px) / 3);
     aspect-ratio: 1/1.1;
     background-color:var(--product-list-item);
     padding: 50px;
@@ -435,11 +438,11 @@ body.light-mode .toggle-button #sun {
     position:absolute;
     border-radius:50%;
     border-width:0;
-    width:50px;
-    height:50px;
+    width:3vw;
+    height:3vw;
     background-color:var(--product-list-button);
     color:black;
-    transform: translateY(50vh  );
+    transform: translateY(50vh);
 }
 .product .right{
     right:0.5vw;
