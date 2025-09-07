@@ -164,6 +164,9 @@
     .policy .sub2{
         flex-direction: column;
     }
+    .policy .sub2 .line1, .policy .sub2 .line2{
+        align-items: center;
+    }
     .policy .sub2 .line1 .card, .policy .sub2 .line2 .card{
         width:38.5vw;
         aspect-ratio: 1;        
