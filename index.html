@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astopia</title>
-    <link rel="stylesheet" href="static1\normal.css">
+    <link rel="stylesheet" href="static1/normal.css">
+    <link rel="stylesheet" href="static1/ipad.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="">
     <div class="line"></div>
@@ -16,10 +18,10 @@
         </a>-->
         <div class="logo"></div>
         <div class="nav-links">
-            <a href="/aboutus" class="items">About Us</a>
-            <a href="/policy" class="items">Policy</a>
-            <a href="/products" class="items">Products</a>
-            <a href="/comment" class="items-1">Comments</a>
+            <a href="#aboutus" class="items">About Us</a>
+            <a href="#policy" class="items">Policy</a>
+            <a href="#products" class="items">Products</a>
+            <a href="#comment" class="items-1">Comments</a>
         </div>
         <div class="toggle-wrapper">
             <input type="checkbox" id="toggle" class="toggle-input">
@@ -42,7 +44,7 @@
                 <img src="static1\dragon(13).gif" alt="fire-dragon" class="fire-dragon">
             </div>
         </div>
-        <div class="aboutus">
+        <div class="aboutus" id="aboutus">
             <img src="static1/dragon_fly (1).gif" alt="Dragon Shooting Ball">
             <div class="outer">
                 <h1 class="title2">About Us</h1>
@@ -54,14 +56,27 @@
                 </div>
                 <hr>
                 <div class="content2">
-                    <h1>Astopia</h1>
+                    <h1>恆曦</h1>
                     <p>
                         漪，指粼粼波光的意思。我們希望為同學們創造充滿發展空間的學習環境， 讓學生發掘自己潛藏的能力，閃閃發光。晟，指光明、旺盛、興盛的意思。我 們希望同學在我們創造的生機勃勃校園生活下，勇敢嘗試，探索自我，享受 校園生活。我們漪晟更希望以「真誠」服務全體師生，共同創造美好的校園生 活。我們的目標是靠著竭盡所能的態度為同學們創造一個卓越而富有學習成 效的環境，讓學生在最佳的環境中發展和成長。
                     </p>
                 </div>
+                <div class="phone-content">
+                    <hr class="upper">
+                    <h1>Astopia 恆曦</h1>
+                    <p>noun <span>[ C or U ]</span></p>
+                    <p>UK&nbsp;&nbsp;<i class="fa fa-volume-up"></i>&nbsp;&nbsp;/æs'təʊ.pi.ə/&nbsp;&nbsp;US&nbsp;&nbsp;<i class="fa fa-volume-up"></i>&nbsp;&nbsp;/æs'toʊ.pi.ə/</p>
+                    <hr class="lower">
+                    <p>a perfect society in which people work well with each other and are happy</p>
+                    <p>烏托邦；理想中的完美世界</p>
+                    <ul>
+                        <li>Try and imagine a perfect society, a utopia, in which the government really got everything right.</li>
+                        <li>Humans, in the developed world at least, are as close to utopia as they are ever likely to be, argues the professor.</li>
+                    </ul>
+                </div>
             </div>
         </div>  
-        <div class="product">
+        <div class="product" id="product">
             <div class="sub1">
                 <h1 class="title3">Product. <span>Astopia Costumized <br>Products</span></h1>
             </div>
@@ -103,9 +118,9 @@
                 </div>
             </div>
             <button class="left" onclick="prev()"><i class="fas fa-chevron-left"></i></button>
-                <button class="right" onclick="next()"><i class="fas fa-chevron-right"></i></button>
+            <button class="right" onclick="next()"><i class="fas fa-chevron-right"></i></button>
         </div>
-        <div class="activities">
+        <div class="activities" id="activities">
             <h1 class="title4">I dont fucking want to do this page now</h1>
             <div class="hl"></div>
             <div class="vl"></div>
@@ -114,73 +129,77 @@
             <h1>Michelle Gay2</h1>
             <div class="content2"></div>
         </div>
-        <div class="policy">
+        <div class="policy" id="policy">
             <div class="sub1">
                 <h1 class="title4">Our Policy</h1>
                 <p class="subtitle">Click On One To Explore More</p>
             </div>
             <hr>
             <div class="sub2">
-                <div class="card card1" onclick="toggleCard(this)" style="display:block;">
-                    <div class="icon">
-                        <i class="fas fa-landmark"></i>
+                <div class="line1">
+                    <div class="card card1" onclick="toggleCard(this)" style="display:block;">
+                        <div class="icon">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <h1>校政部門</h1>
+                        <ul>
+                            <li class="">Michelle</li>
+                            <li class="">Maxi</li>
+                            <li class="">Jason</li>
+                            <li class="">Jack</li>
+                            <li class="">Gianna</li>
+                        </ul>
+                        <p class="more-content"> Extra things</p>
                     </div>
-                    <h1>校政部門</h1>
-                    <ul>
-                        <li class="">Michelle</li>
-                        <li class="">Maxi</li>
-                        <li class="">Jason</li>
-                        <li class="">Jack</li>
-                        <li class="">Gianna</li>
-                    </ul>
-                    <p class="more-content"> Extra things</p>
+                    <div class="card card2" onclick="toggleCard(this)" style="display:block;">
+                        <div class="icon">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h1>福利部門</h1>
+                        <ul>
+                            <li class="">Gay</li>
+                            <li class="">Ass</li>
+                            <li class="">Win</li>
+                            <li class="">Liz</li>
+                            <li class="">Elaine</li>
+                        </ul>
+                        <p class="more-content"> Extra things</p>
+                    </div>
                 </div>
-                <div class="card card2" onclick="toggleCard(this)" style="display:block;">
-                    <div class="icon">
-                        <i class="fas fa-hand-holding-heart"></i>
+                <div class="line2">
+                    <div class="card card3" onclick="toggleCard(this)" style="display:block;">
+                        <div class="icon">
+                            <i class="fas fa-icons"></i>
+                        </div>
+                        <h1>康樂及文化事務部門</h1>
+                        <ul>
+                            <li class="">Kayla</li>
+                            <li class="">Orane</li>
+                            <li class="">JUSTXUAN</li>
+                            <li class="">X</li>
+                            <li class="">xuan</li>
+                        </ul>
+                        <p class="more-content"> Extra things</p>
                     </div>
-                    <h1>福利部門</h1>
-                    <ul>
-                        <li class="">Gay</li>
-                        <li class="">Ass</li>
-                        <li class="">Win</li>
-                        <li class="">Liz</li>
-                        <li class="">Elaine</li>
-                    </ul>
-                    <p class="more-content"> Extra things</p>
-                </div>
-                <div class="card card3" onclick="toggleCard(this)" style="display:block;">
-                    <div class="icon">
-                        <i class="fas fa-icons"></i>
+                    <div class="card card4" onclick="toggleCard(this)" style="display:block;">
+                        <div class="icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h1>傳訊事務部門</h1>
+                        <ul>
+                            <li class="">Charles</li>
+                            <li class="">Tough</li>
+                            <li class="">王子軒</li>
+                            <li class="">GAY ASF</li>
+                            <li class="">SYBAU</li>
+                        </ul>
+                        <p class="more-content"> Extra things</p>
                     </div>
-                    <h1>康樂及文化事務部門</h1>
-                    <ul>
-                        <li class="">Kayla</li>
-                        <li class="">Orane</li>
-                        <li class="">JUSTXUAN</li>
-                        <li class="">X</li>
-                        <li class="">xuan</li>
-                    </ul>
-                    <p class="more-content"> Extra things</p>
-                </div>
-                <div class="card card4" onclick="toggleCard(this)" style="display:block;">
-                    <div class="icon">
-                        <i class="fas fa-bullhorn"></i>
-                    </div>
-                    <h1>傳訊事務部門</h1>
-                    <ul>
-                        <li class="">Charles</li>
-                        <li class="">BrO iS nOt tOUgH</li>
-                        <li class="">王子軒</li>
-                        <li class="">GAY ASF</li>
-                        <li class="">SYBAU</li>
-                    </ul>
-                    <p class="more-content"> Extra things</p>
                 </div>
             </div>
             <hr>
         </div>
-        <div class="comment">
+        <div class="comment" id="comment">
             <h1 class="title5">LEAVE US SOME COMMNETS OR SUGGESTIONS</h1>
             <p class="subtitle">log in to your pkc account to ...</p>
             <button class="log-in-bt"><img src="static1\google logo.png">Sign In with Google</button>
@@ -218,4 +237,3 @@
     <script src="static1/extent.js"></script>
 </body>
 </html>
-
