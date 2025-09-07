@@ -14,7 +14,7 @@ function toggleCard(card) {
             if (!wasActive) {
                 card.classList.add('active');
                 card.style.display = 'block';
-                card.style.width = '60%';
+                card.style.width = '77vw';
             } else {
                 allCards.forEach(c => {
                     c.style.display = 'block';
