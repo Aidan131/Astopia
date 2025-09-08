@@ -7,15 +7,22 @@ function handleScroll() {
   const scrollY = window.scrollY;
 
   const triggerPoint = 100;
-
-  if (scrollY > triggerPoint && window.innerWidth > 600) {
-    header.classList.add('scrolled'); 
-    logo.classList.add('scrolled');
-    toggle_wrapper.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-    logo.classList.remove('scrolled');
-    toggle_wrapper.classList.remove('scrolled');
+  if (window.innerWidth > 600){
+    if (scrollY > triggerPoint) {
+      header.classList.add('scrolled'); 
+      logo.classList.add('scrolled');
+      toggle_wrapper.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+      logo.classList.remove('scrolled');
+      toggle_wrapper.classList.remove('scrolled');
+    }
+  } else{
+    if (scrollY > triggerPoint) {
+      header.classList.add('scrolled'); 
+    } else {
+      header.classList.remove('scrolled');
+    }
   }
 }
 
