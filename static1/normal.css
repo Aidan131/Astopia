@@ -1,3 +1,4 @@
+/*not updated (header overflow)*/
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
 :root{
@@ -70,14 +71,16 @@ header{
     margin-top:30px;
     max-width:1400px;
     background:transparent;
+    overflow:hidden;
+    transition: width 0.1s ease-out;
 }
 header.scrolled{
-    width:auto;
+    width:400px;
     min-height: 40px;   
     background:var(--header-scrolled);
     border-radius:40px; 
     justify-content: center;
-    transition: width 1s linear;
+    transition: width 0.1s ease-out;
 }
 header .logo{
     border-radius: 50%;
@@ -96,21 +99,13 @@ header .nav-links{
     display:flex;
     align-items: center;
     /*margin-right:3px;*/
+    gap:40px;
 }
 header .items{
     color:var(--main-txt-color);
     text-decoration: none;
-    margin-left:40px;
     font-weight:bold;
     font-size:small;
-}
-header .items-1{
-    color:var(--main-txt-color);
-    text-decoration: none;
-    margin-left:40px;
-    font-weight:bold;
-    font-size:small;
-    margin-right:40px;
 }
 header button{
     border-radius:40px;
@@ -122,7 +117,13 @@ header button{
     margin-right:30px;
 }
 
+header .fa-bars{
+    display:none;
+}
 
+header .sidebar{
+    display:none;
+}
 
 .toggle-wrapper {
     display: inline-block;
