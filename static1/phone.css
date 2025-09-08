@@ -5,6 +5,13 @@
         margin-top:0;
         background-color:rgb(34, 34, 34);
     }
+    header.scrolled{
+        background-color:#474747c2;
+        justify-content: space-between;
+        border-radius:unset; 
+        min-height: 5vh;
+        width:100vw;
+    }
     header .logo{
         height:20px;
     }
@@ -78,7 +85,7 @@
     }
     .aboutus .outer .title2{
         margin: 3vw 0 3vw 10vw;
-        font-size:5vw;
+        font-size:6vw;
     }
     .aboutus .outer .phone-content{
         border-radius: 5px;
