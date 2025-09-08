@@ -6,8 +6,10 @@
     <title>Astopia</title>
     <link rel="stylesheet" href="static1/normal.css">
     <link rel="stylesheet" href="static1/ipad.css">
+    <link rel="stylesheet" href="static1/phone.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body class="">
     <div class="line"></div>
@@ -16,23 +18,34 @@
             
             <img src="" alt="Logo">
         </a>-->
-        <div class="logo"></div>
+        <img src="static1/logo.png" class="logo"></img>
         <div class="nav-links">
             <a href="#aboutus" class="items">About Us</a>
             <a href="#policy" class="items">Policy</a>
             <a href="#products" class="items">Products</a>
-            <a href="#comment" class="items-1">Comments</a>
+            <a href="#comment" class="items">Comments</a>
         </div>
-        <div class="toggle-wrapper">
-            <input type="checkbox" id="toggle" class="toggle-input">
-            <label for="toggle" class="toggle-label">
-                <div class="toggle-button">
-                    <i class="fas fa-moon" id="moon"></i>
-                    <i class="fa-solid fa-sun" id="sun"></i>
-                </div>
-            </label>
-        </div>      
+        <div class="right">
+            <div class="toggle-wrapper">
+                <input type="checkbox" id="toggle" class="toggle-input">
+                <label for="toggle" class="toggle-label">
+                    <div class="toggle-button">
+                        <i class="fas fa-moon" id="moon"></i>
+                        <i class="fa-solid fa-sun" id="sun"></i>
+                    </div>
+                </label>
+            </div>
+            <div class="sidebar_logo_container" onclick="show_sidebar()"><i class="fa-solid fa-bars" id="sun"></i></div>
+        </div>
     </header>
+    <div class="sidebar" style="display:none;">
+        <div class="nav-side">
+            <a href="#aboutus" class="items"><i class="fas fa-users"></i>About Us</a>
+            <a href="#policy" class="items"><i class="fas fa-file-contract"></i>Policy</a>
+            <a href="#products" class="items"><i class="fas fa-box-open"></i>Products</a>
+            <a href="#comment" class="items"><i class="fas fa-comments"></i>Comments</a>
+        </div>
+    </div>
     <div class="container">
         <div class="home">
             <div class="sub1">
@@ -235,5 +248,6 @@
     <script src="static1/scroll.js"></script>
     <script src="static1/next.js"></script>
     <script src="static1/extent.js"></script>
+    <script src="static1\menu.js"></script>
 </body>
 </html>
