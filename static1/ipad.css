@@ -70,7 +70,7 @@
     }
     .aboutus .phone-content{
         display:flex;
-        flex-direction: column;
+        flex-direction: column; 
         border-radius:40px;
         height:78%;
         width:90%;
@@ -143,6 +143,9 @@
     .product button{
         transform: translateY(0);
         top:60%;
+    }
+    .product .word-last{
+        font-size:5vw;
     }
     .policy{
         width:100vw;
