@@ -473,6 +473,14 @@ body.light-mode .toggle-button #sun {
 .product button:active{
     background-color:var(--product-list-button-active);
 }
+.product .word-last{
+    color:white;
+    margin-left:5vh;
+    font-size:10vh;
+    align-self: center;
+    white-space: nowrap;
+    transition:all 0.2s linear;
+}
 
 /*Activities*/
 
