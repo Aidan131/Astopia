@@ -1,5 +1,4 @@
-@import url('normal.css');
-
+/*not updated*/
 @media (width < 1366px){
     .policy .sub2 .card:hover:not(.active){
         transform:none;
@@ -14,6 +13,7 @@
 }
 
 @media (max-aspect-ratio: 1/1){
+    
     .home{
         aspect-ratio: 2;
         width:100vw;
@@ -76,7 +76,7 @@
         border-radius:40px;
         height:78%;
         width:90%;
-        background-color:var(--about-us-content);
+        background-color:#323232;
         padding-left:20px;
         color:white;
         align-items: left;
@@ -133,9 +133,15 @@
     .product .list{
         min-height:unset;
     }
+    .product .list .item{
+        border-radius: 20px;
+    }
     .product .list .item h1{
         font-size:4vw;
         margin-left:1vw;
+    }
+    .product .list .item div{
+        border-radius: 20px;
     }
     .product button{
         transform: translateY(0);
@@ -187,7 +193,7 @@
         margin-left:20px;
     }
     .comment{
-        border-top:1px solid var(--pages-bottom-border);
+        border-top:1px solid #8d8d8d48;
         min-height:unset;
         height:auto;
         width:100vw;
