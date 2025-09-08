@@ -87,15 +87,16 @@
         padding-left: 2vw;
     }
     .aboutus .outer .phone-content h1{
-        font-size:3vw;
+        font-size:4vw;
     }
     .aboutus .outer .phone-content p{
-        font-size:1vw;
+        font-size:3vw;
         margin-top:1px;
     }
     .aboutus .outer .phone-content ul{
-        font-size:1vw;
-        line-height:2vw;
+        font-size:3vw;
+        line-height:3vw;
+        padding-left:5vw;
     }
     .aboutus .outer .phone-content hr{
         margin-top:2px;
