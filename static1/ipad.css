@@ -74,7 +74,7 @@
         border-radius:40px;
         height:78%;
         width:90%;
-        background-color:#323232;
+        background-color: var(--about-us-content);
         padding-left:20px;
         color:white;
         align-items: left;
@@ -174,7 +174,12 @@
         width:38.5vw;
         aspect-ratio: 1;        
     }
-    .policy .sub2 .card .icon{   
+    .policy .sub2 .card .container{
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .policy .sub2 .card .icon{
         font-size:4vw;
         margin-bottom:10px;
     }
