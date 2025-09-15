@@ -24,6 +24,7 @@
     --color-quinary: #ee6352; 
     --product-txt-color:#ffffff;
     --card-bg-color:#111;
+    --product-word-last: #ffffff;
     /*activities and following pages not done*/
 }
 
@@ -37,6 +38,7 @@
     --about-us-content:#706663;
     --product-txt-color:#d3c2bd;
     --card-bg-color:#423b3a;
+    --product-word-last :#423b3a;
 }
 html,body{
     height:100%;
@@ -458,18 +460,69 @@ body.light-mode .toggle-button #sun {
     color:var(--product-txt-color);
     font-weight:900;
     margin-top:0;
+    margin-bottom: 1vw;
 }
 
 .product .list .item div{
-    background-color:var(--product-list-item-div);
-    aspect-ratio:1/1;
+    /*background-color:var(--product-list-item-div);*/
+    /*aspect-ratio:1/1;*/
+    height:80%;
     width: 100%;
-    border-radius:40px;
-    align-self:center;
-    justify-self:center; 
+    display:flex;
+    align-items:center;
+    justify-self:center;
 }
 
-.product button{
+.product .list .item div .back{
+    z-index:1;
+    position:relative;
+    transform: translate(-10%,10%);
+}
+
+.product .list .item div .back{
+    z-index:1;
+}
+
+.product .list .item button{
+    position: relative;
+    width:50%; 
+    height:20%;
+    background-color: transparent;
+    border-color:white;
+    color:white;
+    border-radius:10px;
+    font-family:"Pixelify Sans", sans-serif;
+    font-size:larger;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.3s ease;
+    z-index: 1;
+}
+
+.product .list .item button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.product .list .item button:active{
+    color:#000000;
+    border-color:black;
+}
+
+.product .list .item button:active::before {
+    transform: scaleX(1);
+}
+
+.product .left, .product .right{
     position:absolute;
     border-radius:50%;
     border-width:0;
@@ -489,7 +542,7 @@ body.light-mode .toggle-button #sun {
     background-color:var(--product-list-button-active);
 }
 .product .word-last{
-    color:white;
+    color:var(--product-word-last);
     margin-left:5vh;
     font-size:10vh;
     align-self: center;
