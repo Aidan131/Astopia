@@ -10,10 +10,19 @@
     .home .sub2 .ice-dragon{
         width:400px;
     }
+    .product .list{
+        align-items: center;
+    }
+    .product .list .item{
+        border-radius:20px;
+        padding-bottom:5vw;
+    }
+    .product .list .word-last{
+        font-size: 6vh;
+    }
 }
 
 @media (max-aspect-ratio: 1/1){
-    
     .home{
         aspect-ratio: 2;
         width:100vw;
@@ -140,12 +149,12 @@
     .product .list .item div{
         border-radius: 20px;
     }
-    .product button{
+    .product .right, .product .left{
         transform: translateY(0);
         top:60%;
     }
     .product .word-last{
-        font-size:5vw;
+        font-size:4vw;
     }
     .policy{
         width:100vw;
