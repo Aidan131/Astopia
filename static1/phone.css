@@ -111,12 +111,28 @@
     }
     .product .list .item{
         border-radius:10%;
+        min-width:80%;
+        padding-bottom:10vw;
+        padding-top:5vw;
+        margin-left:8%;
+    }
+    .product .list .item h1{
+        font-size:6vw;
+        margin-bottom:3vw;
     }
     .product .word-last{
         font-size:5vw;
     }
+    .product .left, .product .right{
+        height:10vw;
+        width:10vw;
+        font-size:2vw;
+    }
     .product .list .item div{
         border-radius:10%;
+    }
+    .product .list .word-last{
+        font-size:9.5vw;
     }
     .policy .sub2 .card{
         padding: 5vw 3vw 2vw 3vw;
